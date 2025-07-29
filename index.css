@@ -66,13 +66,14 @@ body {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   width: 100%; /* Full width */
-  height: auto; /* Full height */
+  height: 100%; /* Full height */
   top: 0;
   left: 0;
   background-color: black; /* Black w/ opacity */
 }
 
 .modal {
+  aspect-ratio: 2;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 2; /* Sit on top */

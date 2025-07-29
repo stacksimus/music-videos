@@ -21,11 +21,6 @@ Array.from(document.getElementsByClassName('card')).map(card => {
     }
 });
 
-
-const btn = document.getElementById("avril_lavigne-complicated");
-
-
-
 modalBackground.onclick = function() {
   modalBackground.style.display = "none";
   modal.style.display = "none";
