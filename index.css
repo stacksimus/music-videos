@@ -29,7 +29,15 @@ body {
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 80% !important;
+    }
+}
+
 .card {
+    width: 25%;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 40px;
@@ -58,7 +66,7 @@ body {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  height: auto; /* Full height */
   top: 0;
   left: 0;
   background-color: black; /* Black w/ opacity */
@@ -69,7 +77,7 @@ body {
   position: fixed; /* Stay in place */
   z-index: 2; /* Sit on top */
   width: 75%; /* Full width */
-  height: 75%; /* Full height */
+  height: auto; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: black; /* Black w/ opacity */
   top: 50%;
