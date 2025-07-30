@@ -38,7 +38,7 @@ Array.from(document.getElementsByClassName('card')).map(card => {
         modal.style.display = "block";
         const iframe = document.createElement('iframe');
         iframe.id = 'youtube-iframe';
-        iframe.src = `https://www.youtube.com/embed/${youtubeId}&autoplay=1&loop=1`;
+        iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1`;
         iframe.frameborder = '0';
         iframe.width = '99%';
         iframe.height = '98%';
