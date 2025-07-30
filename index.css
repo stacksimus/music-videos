@@ -10,23 +10,26 @@ body {
 .header {
     top: 0;
     background: black;
-    z-index:999;
 }
 
 .header-title {
     color: white;
     font-size: 30px;
     font-weight: 800;
-    margin:0 25px;
+    margin:50px 25px;
     font-family: Roboto, sans-serif;
 }
 
 .gallery {
+    overflow: hidden;
+    opacity: 0;
     margin: 30px auto;
     display: flex;
+    max-height: 0;
     justify-content: center;
     max-width: 1500px;
     flex-wrap: wrap;
+    transition: all 0.5s ease-out;
 }
 
 @media screen and (max-width: 1000px) {
@@ -40,7 +43,7 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 5px;
     opacity: 0.5;
 }
 
@@ -84,4 +87,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.gallery-expand {
+    opacity: 1;
+    max-height: 2000px;
+    transition: all 0.5s ease-in;
 }

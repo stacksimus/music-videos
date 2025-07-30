@@ -1,6 +1,34 @@
 const modal = document.getElementById("modal");
 const modalBackground = document.getElementById("modal-background");
 
+const headers = document.getElementsByClassName('header');
+const galleries = document.getElementsByClassName('gallery');
+
+
+Array.from(headers).map(header => {
+    header.onclick = function() {
+        const galleryId = `gallery-${header.getAttribute('id').split('-')[1]}`;
+        const gallery = document.getElementById(galleryId);
+        
+        console.log('clicked header');
+        console.log(galleryId);
+        
+        if (gallery.classList.contains('gallery-expand')) {
+            gallery.classList.remove('gallery-expand');
+        }
+        else {
+            Array.from(galleries).forEach((otherGallery) => {
+                otherGallery.classList.remove('gallery-expand');
+                console.log('removing gallery-expand to ' + otherGallery.getAttribute('id'));
+            });
+            if (!gallery.classList.contains('gallery-expand')) {
+                console.log('adding gallery-expand to ' + gallery.getAttribute('id'));
+                gallery.classList.add('gallery-expand');
+            }
+        }
+    }
+});
+
 Array.from(document.getElementsByClassName('card')).map(card => {
     const youtubeId = card.getAttribute('youtube-id');
     
