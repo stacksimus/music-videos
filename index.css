@@ -80,7 +80,7 @@ body {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 2; /* Sit on top */
-  width: 75%; /* Full width */
+  width: 90%; /* Full width */
   height: auto; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: black; /* Black w/ opacity */
